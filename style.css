@@ -1,3 +1,27 @@
+:root {
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --spacing-xxxl: 96px;
+  --spacing-xxxxl: 128px;
+  --font-sm: 1rem;
+  --font-md: 1.25rem;
+  --font-lg: 1.5rem;
+  --font-xl: 2rem;
+  --primary-green: hsl(160deg, 100%, 30%);
+  --secondary-lighter-gold: hsl(45deg, 100%, 50%);
+  --secondary-darker-gold: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%) (black);
+  --very-dark-gray: hsl(0deg, 0%, 10%);
+  --dark-gray: hsl(0deg, 0%, 30%);
+  --medium-gray: hsl(0deg, 0%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -10,3 +34,16 @@ body {
 }
 
 /* Add styles here! */
+.max-width-wrapper {
+  width: 100%;
+  padding: var(--spacing-xl) var(--spacing-xxxxl);
+}
+
+section.max-width-wrapper {
+  background-color: var(--medium-gray);
+  border-top: var(--spacing-xs) solid var(--light-gray);
+}
+
+strong {
+  color: var(--primary-green);
+}
