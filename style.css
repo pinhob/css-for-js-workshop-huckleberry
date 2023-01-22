@@ -1,4 +1,5 @@
 :root {
+  --spacing-negative: -24px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
   --spacing-md: 24px;
@@ -31,19 +32,51 @@ html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 /* Add styles here! */
 .max-width-wrapper {
+  padding: var(--spacing-xl) 0;
   width: 100%;
-  padding: var(--spacing-xl) var(--spacing-xxxxl);
 }
 
 section.max-width-wrapper {
   background-color: var(--medium-gray);
   border-top: var(--spacing-xs) solid var(--light-gray);
+  padding-top: var(--spacing-xxl);
+}
+
+div {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: var(--spacing-sm);
+}
+
+div.card {
+  background-color: var(--white);
+  border-bottom:var(--spacing-xs) solid var(--light-gray);
+  padding: var(--spacing-sm);
+}
+
+div.intro-chunk p {
+  max-width: 415px;
+}
+
+h1.title {
+  margin-bottom: var(--spacing-lg);
+}
+
+h2.indented-heading {
+  background-color: var(--secondary-lighter-gold);
+  border-bottom:var(--spacing-xs) solid var(--secondary-darker-gold);
+  margin-left: var(--spacing-negative);
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  width: fit-content;
 }
 
 strong {
   color: var(--primary-green);
+  font-weight: 800;
 }
